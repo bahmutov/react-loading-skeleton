@@ -1,0 +1,13 @@
+{
+  "fixturesFolder": false,
+  "pluginsFile": "cypress/plugins/use-babelrc.js",
+  "supportFile": "node_modules/cypress-react-unit-test/support",
+  "testFiles": "**/*.cy-spec.js",
+  "viewportWidth": 600,
+  "viewportHeight": 600,
+  "experimentalComponentTesting": true,
+  "componentFolder": "stories",
+  "env": {
+    "coverage": false
+  }
+}
