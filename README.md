@@ -44,3 +44,5 @@ it('loads title after timeout', () => {
 ```
 
 ![Dynamic test](images/dynamic.gif)
+
+**Note** to get component code coverage, run Cypress with `BABEL_ENV=test`, see [.babelrc](.babelrc)

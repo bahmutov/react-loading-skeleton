@@ -54,7 +54,7 @@
     "@types/react": "^16.9.11",
     "babel-loader": "^8.0.6",
     "cypress": "4.4.1",
-    "cypress-react-unit-test": "3.0.0-cypress-mount-mode.19",
+    "cypress-react-unit-test": "3.0.0-cypress-mount-mode.20",
     "enzyme": "^3.1.0",
     "enzyme-adapter-react-16": "^1.15.1",
     "jest": "^24.9.0",

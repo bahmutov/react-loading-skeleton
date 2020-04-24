@@ -5119,10 +5119,10 @@ cyclist@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/cyclist/-/cyclist-1.0.1.tgz#596e9698fd0c80e12038c2b82d6eb1b35b6224d9"
 
-cypress-react-unit-test@3.0.0-cypress-mount-mode.19:
-  version "3.0.0-cypress-mount-mode.19"
-  resolved "https://registry.yarnpkg.com/cypress-react-unit-test/-/cypress-react-unit-test-3.0.0-cypress-mount-mode.19.tgz#519b6ddcc786f9b3a120288b3103decf35070d32"
-  integrity sha512-NGZyxOHnC04JQFqhlgk1N+o+WsgnVVzkkxYH5zV9pAaQ6k1zwTS6PD+yF8ajlPmc2bdj9QYGs3dy4Gj462RcKw==
+cypress-react-unit-test@3.0.0-cypress-mount-mode.20:
+  version "3.0.0-cypress-mount-mode.20"
+  resolved "https://registry.yarnpkg.com/cypress-react-unit-test/-/cypress-react-unit-test-3.0.0-cypress-mount-mode.20.tgz#6ac90b638ec89e66fcea457503de73c0e406cbb7"
+  integrity sha512-PfVTk+doxAOYsl7D3HSlw82mnCThEqfGPmJVwRN874kJRN81excmjZELDjyOklGG0ZwZAL8VuEcT1rZ+FelDqA==
   dependencies:
     "@cypress/code-coverage" "3.0.0"
     "@cypress/webpack-preprocessor" "4.1.3"
