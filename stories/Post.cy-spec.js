@@ -47,4 +47,38 @@ describe('Post skeletons', () => {
 
     mount(<Test />)
   })
+
+  // extra test - set Post title after a timeout
+  it('loads title after timeout', () => {
+    const Demo = () => {
+      // at first there is not title, no children
+      const [title, setTitle] = React.useState('');
+      const [text, setText] = React.useState('');
+
+      setTimeout(() => {
+        setTitle('Post title 👍')
+      }, 1000)
+
+      setTimeout(() => {
+        setText(`The text has arrived ...
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec
+          justo feugiat, auctor nunc ac, volutpat arcu. Suspendisse faucibus
+          aliquam ante, sit amet iaculis dolor posuere et. In ut placerat leo.
+        `)
+      }, 2000)
+
+      return <Post title={title} children={text} />
+    }
+    mount(<Demo />)
+    // at first, the title and the text are 💀
+    cy.get('h1 .react-loading-skeleton').should('have.length', 1)
+    cy.get('p .react-loading-skeleton').should('have.length', 5)
+
+    // then the title arrives, but the text is still skeletons
+    cy.contains('h1', 'Post title 👍').should('be.visible')
+    cy.get('p .react-loading-skeleton').should('have.length', 5)
+
+    // and then no skeletons remain
+    cy.get('.react-loading-skeleton').should('not.exist')
+  })
 })
