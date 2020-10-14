@@ -1,5 +1,7 @@
 # react-loading-skeleton
 
+![cypress version](https://img.shields.io/badge/cypress-5.3.0-brightgreen) ![cypress-react-unit-test version](https://img.shields.io/badge/cypress--react--unit--test-4.16.0-brightgreen)
+
 Forked from [dvtng/react-loading-skeleton](https://github.com/dvtng/react-loading-skeleton) to show [cypress-react-unit-test v2](https://github.com/bahmutov/cypress-react-unit-test/tree/feature/cypress-mount-mode)
 
 ![Toggle test](images/toggle.gif)
