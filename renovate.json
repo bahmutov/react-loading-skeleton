@@ -25,9 +25,7 @@
       "excludePackagePatterns": [
         "cypress",
         "cypress-expect",
-        "cypress-react-unit-test",
-        "redux",
-        "react-redux"
+        "cypress-react-unit-test"
       ],
       "enabled": false
     }
