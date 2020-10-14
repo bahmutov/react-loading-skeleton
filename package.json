@@ -3,7 +3,7 @@
   "version": "2.0.0",
   "license": "MIT",
   "author": "David Tang",
-  "private": false,
+  "private": true,
   "main": "lib/index.js",
   "sideEffects": false,
   "browserslist": [
@@ -24,10 +24,12 @@
   },
   "scripts": {
     "start": "yarn run storybook",
-    "test": "jest",
+    "test:jest": "jest",
+    "test": "cypress-expect run --passing 11",
     "build": "babel src --out-dir lib --delete-dir-on-start --copy-files",
     "storybook": "start-storybook -p 8080",
-    "prepublishOnly": "yarn run build"
+    "prepublishOnly": "yarn run build",
+    "update:badges": "update-badge cypress cypress-react-unit-test"
   },
   "jest": {
     "roots": [
@@ -53,8 +55,10 @@
     "@storybook/react": "^5.2.6",
     "@types/react": "^16.9.11",
     "babel-loader": "^8.0.6",
-    "cypress": "4.4.1",
-    "cypress-react-unit-test": "3.0.0-cypress-mount-mode.20",
+    "cypress": "5.3.0",
+    "cypress-expect": "2.1.2",
+    "cypress-react-unit-test": "4.16.0",
+    "dependency-version-badge": "1.5.0",
     "enzyme": "^3.1.0",
     "enzyme-adapter-react-16": "^1.15.1",
     "jest": "^24.9.0",
